@@ -11,9 +11,6 @@ import org.xhtmlrenderer.pdf.PDFEncryption;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Base64;
 
 @Service
 public class PDFService {
