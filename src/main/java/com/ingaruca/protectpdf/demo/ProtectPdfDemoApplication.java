@@ -27,9 +27,9 @@ public class ProtectPdfDemoApplication implements CommandLineRunner {
     System.out.println("PDF creation done.");
 
     byte[] input = Files.readAllBytes(Paths.get("/Users/ingarukadev/Documents/Projects/protect-pdf/message.pdf"));
-    byte[] endodedInput = Base64.getEncoder().encode(input);
+    byte[] encodedInput = Base64.getEncoder().encode(input);
 
-    String fileInBase64 = new String(endodedInput);
+    String fileInBase64 = new String(encodedInput);
 
     System.out.println("base 64: " + fileInBase64);
   }
